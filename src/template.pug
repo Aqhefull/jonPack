@@ -1,0 +1,21 @@
+include components/head/head
+include components/header/header
+include components/about/about
+include components/footer/footer
+
+doctype html
+html(lang="en")
+  block head
+    head
+      +head({
+        "title": "jonPack",
+        "author": "Alexandr Komarevich",
+        "description": "Personal Webpack Boilerplate"
+      })
+  body
+    block header
+      +header()
+    block content
+      div content
+    block footer
+      +footer()
