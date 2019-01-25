@@ -7,5 +7,9 @@
     +container(center, center)
     min-height: 400px
     height: 100%
+    @media #{$_sm}
+      flex-direction: column
   &__item
     +col(6)
+    @media #{$_sm}
+      +col(12)
